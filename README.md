@@ -19,3 +19,23 @@
 ├── LICENSE                             # MIT License (AD-Styles)
 ├── README.md                           # 프로젝트 요약 및 가이드
 └── requirements.txt                    # 필수 라이브러리 목록
+```
+
+---
+
+## 🛠️ 기술 스택 (Tech Stack)
+| 구분 | 상세 항목 |
+| :--- | :--- |
+| **Language** | Python |
+| **Libraries** | NLTK, Spacy, Scikit-learn (전처리 및 벡터화) |
+| **Frameworks** | PyTorch / TensorFlow (순환 신경망 구현) |
+| **Visualization** | Matplotlib, Seaborn |
+
+## 🚀 주요 기능 (Key Features)
+
+| 단계 | 주요 기능 (Features) | 핵심 기술 (Key Tech) |
+| :--- | :--- | :--- |
+| **1. 정제 및 정규화** | 텍스트 노이즈 제거 및 일관성 확보 | Cleaning, Stemming, Lemmatization |
+| **2. 토큰화 전략** | 의미 단위 분절 및 효율적 인덱싱 | Word/Char/Subword Tokenization |
+| **3. 데이터 수치화** | 텍스트의 벡터 공간 투영 및 수치 변환 | TF-IDF, Word2Vec, GloVe Embedding |
+| **4. 순환 모델링** | 시계열 데이터의 맥락 파악 및 학습 | RNN, LSTM (Gate 구조 분석) |

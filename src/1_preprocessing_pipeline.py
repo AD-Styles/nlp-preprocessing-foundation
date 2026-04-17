@@ -6,11 +6,13 @@ class NLPPreprocessor:
     """텍스트 데이터 정제 및 토큰화를 위한 전처리 클래스"""
     
     def __init__(self):
+        # 실용적인 기본 영어 불용어 세트
         self.stopwords = {"is", "the", "in", "and", "to", "a", "of", "about"}
 
     def clean_text(self, text: str) -> str:
         """소문자 변환 및 특수문자 제거"""
         text = text.lower()
+        # 알파벳, 숫자, 공백 제외 제거
         text = re.sub(r'[^a-z0-9\s]', '', text)
         return text
 
@@ -21,7 +23,7 @@ class NLPPreprocessor:
         return cleaned_tokens
 
     def process_corpus(self, corpus: List[str]) -> List[str]:
-        """전체 코퍼스에 대한 전처리 파이프라인 실행"""
+        """전체 코퍼스 전처리 파이프라인"""
         processed_corpus = []
         for doc in corpus:
             cleaned = self.clean_text(doc)
@@ -30,12 +32,13 @@ class NLPPreprocessor:
         return processed_corpus
 
 class TextVectorizer:
-    """전처리된 텍스트를 수치 벡터로 변환하는 클래스"""
+    """텍스트를 수치 벡터로 변환하는 클래스"""
     
     def __init__(self):
         self.vectorizer = TfidfVectorizer()
 
     def fit_transform(self, corpus: List[str]):
+        """TF-IDF 변환 수행"""
         return self.vectorizer.fit_transform(corpus)
 
     def get_feature_names(self) -> List[str]:

@@ -1,5 +1,5 @@
 # 📝 NLP Preprocessing & Sequence Modeling Foundation
-## NLP 전처리 및 시퀀스 모델링 기초
+### NLP 전처리 및 시퀀스 모델링 기초
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)

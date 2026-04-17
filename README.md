@@ -34,7 +34,7 @@
 ---
 
 ## 🚀 주요 기능 (Key Features)
-| 단계 | 주요 기능 (Features) | 핵심 기술 (Key Tech) |
+| 단계 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | 주요 기능 (Features) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | 핵심 기술 (Key Tech) |
 | :--- | :--- | :--- |
 | **1. 정제 및 정규화** | 텍스트 노이즈 제거 및 일관성 확보 | Cleaning, Stemming, Lemmatization |
 | **2. 토큰화 전략** | 의미 단위 분절 및 효율적 인덱싱 | Word/Char/Subword Tokenization |
